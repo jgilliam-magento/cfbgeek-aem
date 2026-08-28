@@ -38,6 +38,13 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* CFB GEEK brand tokens */
+  --cfb-navy: #00274c;
+  --cfb-accent: #ffcb05;
+  --cfb-bg: #f4f6f9;
+  --cfb-text-muted: #5a6472;
+  --cfb-font: "Trebuchet MS", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif;
 }
 
 /* fallback fonts */
@@ -322,4 +329,40 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+/* ===== CFB GEEK — hero + section titles ===== */
+body {
+  background-color: var(--cfb-bg);
+  font-family: var(--cfb-font);
+}
+
+/* Hero: first default-content section (H1 + tagline), centered */
+main > .section:first-child .default-content-wrapper {
+  text-align: center;
+  padding: 18px 24px;
+}
+
+main > .section:first-child h1 {
+  margin: 0 0 12px;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+
+main > .section:first-child h1 + p {
+  margin: 0;
+  font-size: clamp(15px, 2vw, 18px);
+  color: var(--cfb-text-muted);
+}
+
+/* Section titles (H2 above each grid) */
+main .section > div > h2 {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--cfb-navy);
 }
