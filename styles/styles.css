@@ -80,9 +80,9 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--cfb-bg);
   color: var(--text-color);
-  font-family: var(--body-font-family);
+  font-family: var(--cfb-font);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
 }
@@ -332,10 +332,7 @@ main .section.highlight {
 }
 
 /* ===== CFB GEEK — hero + section titles ===== */
-body {
-  background-color: var(--cfb-bg);
-  font-family: var(--cfb-font);
-}
+
 
 /* Hero: first default-content section (H1 + tagline), centered */
 main > .section:first-child .default-content-wrapper {
