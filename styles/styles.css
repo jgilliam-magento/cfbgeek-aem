@@ -333,7 +333,6 @@ main .section.highlight {
 
 /* ===== CFB GEEK — hero + section titles ===== */
 
-
 /* Hero: first default-content section (H1 + tagline), centered */
 main > .section:first-child .default-content-wrapper {
   text-align: center;
@@ -363,4 +362,3 @@ main .section > div > h2 {
   font-weight: 700;
   color: var(--cfb-navy);
 }
-/* resync */

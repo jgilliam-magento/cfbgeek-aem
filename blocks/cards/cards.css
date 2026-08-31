@@ -70,10 +70,6 @@
   min-height: 84px;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
-}
-
 .cards .cards-card-image img {
   width: 52px;
   height: 52px;
