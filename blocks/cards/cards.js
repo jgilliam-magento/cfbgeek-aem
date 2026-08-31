@@ -10,6 +10,9 @@ export default function decorate(block) {
       if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
       else div.className = 'cards-card-body';
     });
+    li.querySelectorAll('.cards-card-body p').forEach((p) => {
+      if (/^#\d+$/.test(p.textContent.trim())) p.className = 'tag-pill';
+    });
     ul.append(li);
   });
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));

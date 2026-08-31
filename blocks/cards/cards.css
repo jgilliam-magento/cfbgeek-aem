@@ -19,6 +19,7 @@
 
 .cards .cards-card-image {
   line-height: 0;
+  text-align: center;
 }
 
 .cards > ul > li img {
